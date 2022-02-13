@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>蚂蚁前端课堂</title>
+    <link rel="icon" href="favicon.ico" />
+    <link href="./css/common.css" rel="stylesheet" />
+    <link href="./css/submit.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- 导航 -->
+    <nav>
+        <a class="logo" href="https://xcloud.alipay.com/" target="_blank">
+            <img src="./imgs/logo.png" />
+        </a>
+        <a href="./index.html">首页</a>
+        <a href="./index.html#gallary">画廊</a>
+        <a href="./index.html#abount">关于</a>
+        <a href="./submit.html">上传</a>
+        <a class="search" href="https://www.google.com/search?q=前端学习" target="_blank">
+            <img src="./imgs/search.png" />
+        </a>
+    </nav>
+    <!-- 头部 -->
+    <header>
+        <!-- 主标题 -->
+        <h1>记录眼中的美好</h1>
+    </header>
+
+    <main>
+        <section class="form-wrap">
+            <div class="file-wrap">
+                <!-- 图片上传定制样式(#CSS阶段) -->
+                <label for="upload">
+                    <img id="preview" src="./imgs/upload.png" />
+                </label>
+
+                <input id="upload" type="file" accept=".png, .jpg, .jpeg" />
+            </div>
+            <div class="input-wrap">
+                <div><input id="name" placeholder="名称" /></div>
+                <div><input id="photographer" placeholder="拍摄者" /></div>
+                <div><textarea id="desc" placeholder="描述"></textarea></div>
+            </div>
+        </section>
+
+        <section class="btn-wrap">
+            <button onclick="uploadFile();">发布</button>
+        </section>
+    </main>
+    <!-- 页脚 -->
+    <footer>
+        <span>Copyright © 2021</span>
+        <a href="https://xcloud.alipay.com/" target="_blank"><img src="./imgs/logo-gray.png" /></a>
+    </footer>
+    <script src="./js/submit.js"></script>
+</body>
+
+</html>
