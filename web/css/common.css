@@ -1,0 +1,96 @@
+/* 覆盖浏览器默认值 */
+
+html,
+h1,
+h2,
+p {
+    margin: 0;
+}
+
+html {
+    background-color: #303030;
+    font-family: 'PingFang SC';
+    box-sizing: border-box;
+}
+
+body {
+    /* #ffffff可缩写为#fff */
+    background-color: #fff;
+    /* 左右居中 */
+    margin: 0 auto;
+    width: 800px;
+    /* 相对定位(内部绝对定位元素的参照) */
+    position: relative;
+}
+
+
+/* 导航栏 */
+
+nav {
+    /* 导航栏悬浮在其他元素上层，采用绝对定位 */
+    position: absolute;
+    left: 25px;
+    right: 25px;
+    top: 25px;
+    height: 45px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+nav .logo {
+    /* 占满剩余空间，将其他元素挤到最右侧 */
+    flex: 1.0;
+    margin-left: 15px;
+}
+
+nav .logo img {
+    width: 56px;
+    height: 19px;
+}
+
+nav a {
+    color: #c1b2b1;
+    font-size: 11px;
+    font-family: Helvetica;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 18px;
+}
+
+nav .search {
+    margin-right: 12px;
+}
+
+nav .search img {
+    width: 12px;
+    height: 12px;
+}
+
+
+/* 页脚 */
+
+footer {
+    background-color: red;
+    width: 100%;
+    height: 40px;
+    background-color: #e8edef;
+    color: #95a9b1;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+}
+
+footer span {
+    margin-left: 25px;
+    flex: 1.0;
+}
+
+footer a {
+    margin-right: 25px;
+}
+
+footer img {
+    width: 61px;
+    height: 20px;
+}
